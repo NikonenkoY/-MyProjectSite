@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <script
+  src="https://code.jquery.com/jquery-2.2.4.min.js"
+  integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44="
+  crossorigin="anonymous"></script>
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.form/4.2.1/jquery.form.min.js" integrity="sha384-tIwI8+qJdZBtYYCKwRkjxBGQVZS3gGozr3CtI+5JF/oL1JmPEHzCEnIKbDbLTCer" crossorigin="anonymous"></script>
+    <script src="js/jquery.raty.js"></script>
+    <script src="js/script.js"></script>
+    <link rel="stylesheet" href="css/jquery.raty.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+ <div class="header clearfix">
+     <ul class="menu clearfix">
+         <li><a href="#">Телевизоры</a></li>
+         <li><a href="#">Фены</a></li>
+         <li><a href="#">Пылесосы</a></li>
+     </ul>
+ </div>
+ <div class="content-wrapperr clearfix">
+     <div class="product">
+     </div>
+        <div class="product-img">
+             <div class="big-img">
+                 <img src="img/big-tel4.jpg" alt="">
+             </div>
+             <div class="desc">
+                 <h3>panasonic 2304568AV</h3>
+                 <span>3.965 грн</span>
+                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quasi ratione dolorem est placeat id reiciendis, voluptatibus adipisci praesentium.</p>
+                 <button>Купить</button>        
+             </div>
+             <div id="comment">
+                 <h4>Комментарии</h4>
+            <div class="text-com">
+                <p>Оценка<span id="pre2">3</span></p>   
+                  <hr>
+                 <strong>Василий</strong>
+                  <hr>
+                  <p>Классный телевизор!</p>
+                  <hr>
+               </div>             
+            </div>
+        </div>
+     <div class="check_in">
+<div id="form_wrapper" class="form_wrapper">
+   <form class="login active" id="login_active" action="" method="get">
+     <h3>Авторизация</h3>
+     <div id="messenger"></div>
+        <div>
+            <input type="text" placeholder="Логин:" title="Введите логин" name="username" id="username"/>
+        </div>
+        <div>
+            <input type="password" placeholder="Пароль:" class="required" title="Введите пароль" name="password" id="password"/>
+        </div>
+        <div class="bottom">
+            <input type="submit" value="Войти"/>
+            <a href="#" id="btn">Зарегистрироватся</a>
+        </div>       
+</form>
+   <form class="register" id="register">
+    <h3>Регистрация</h3>
+       <div id="messenge"></div>
+            <div>
+                <input type="text" placeholder="Логин:" id="username1" name="login1"  title="Введите логин"/>
+            </div>           
+            <div>
+                <input type="password" placeholder="Пароль:"  name="password1" id="password1" title="Введите пароль"/>
+            </div>          
+        <div class="bottom">
+            <input type="submit" value="Регистрация" />
+        </div>
+         
+</form>
+</div> 
+    <div class="form-comment">
+        <h3>Оставить комментарий</h3>
+        <p id="mes">Сначала вы должны войти в систему!</p></br>
+        <p id="star"></p> 
+         <form action="# " name="form" id="com">
+               <input type="text" id="comm" name="commen" placeholder="Введите имя" disabled>
+               <textarea name="comment" cols="30" rows="10"  placeholder="Введите комментарий" disabled></textarea>
+               <div class="bottom">
+               <button type="submit" name="send"  id="textarea">Добавить комментарий</button> 
+                   <input type="reset">
+                </div>
+           </form>
+     </div>     
+     </div>
+ </div>
+</body>
+</html>

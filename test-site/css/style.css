@@ -1,0 +1,396 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+body{
+    font-family: "Trebuchet MS", "Myriad Pro", sans-serif;
+    font-size: 16px;
+    color: #000;
+    position: relative;
+    
+}
+a{
+    text-decoration: none;
+}
+a:hover{
+    text-decoration: underline;
+}
+.clearfix::after{
+    content:"";
+    display: block;
+    height: 0;
+    clear: both;
+}
+.header{
+    padding-top: 6px;
+    padding-bottom: 6px;
+    width: 97%;
+    margin-left: 1.5%;
+    border-radius: 1px;
+    border:1px solid #13445a;
+background: rgb(57,126,157);
+background: -webkit-gradient(linear, left top, left bottom, from(rgba(57,126,157,1)),to(rgba(172,163,163,1)));
+background: linear-gradient(to bottom, rgba(57,126,157,1) 0%,rgba(172,163,163,1) 100%);
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#397e9d', endColorstr='#aca3a3',GradientType=0 );;}
+.menu{
+    margin:25px;
+}
+.menu li{
+    float: left;
+    list-style: none;
+    margin-left: 20px;
+    text-transform:capitalize;
+}
+.content-wrapperr{
+    width: 97%;
+    margin-left: 1.5%;
+    margin-top:10px;
+}
+.menu li a{
+    color:#fff;
+    opacity: 1;
+}
+.content-wrapperr div{
+    float:left;
+}
+.product{
+    width: 20%;
+    margin:5px 5px 5px 0;
+    text-align: center;
+}
+.check_in{
+    width: 25%;
+    margin-left:3.7%;
+    margin-top:5px;
+}
+.card-produkt{
+    width: 96%;
+    background: #fff;
+    margin: 1px 5px;
+    font-size: 14px;
+    border: 1px solid #c1bebe;
+    
+}
+.card-produkt:hover{
+    width: 98%;
+    margin-top: 2%;
+    margin-bottom: 2%;
+    margin-left: .5%;
+    z-index: 3;
+    -webkit-box-shadow:  3px 3px 10px rgba(0,0,0,0.5);
+    box-shadow:  3px 3px 10px rgba(0,0,0,0.5);
+    font-size: 15px;
+    border: 1px solid #c1bebe;
+    
+}
+.card-produkt img{
+    margin-top: 2.5%; 
+    margin-bottom: 3%;
+    
+}
+.card-produkt img:first-child{
+    border: 1px solid #000;
+    margin-top: 2.5%; 
+    margin-bottom: 3%;
+    margin-left: 3%;
+    margin-right: 3%;
+    width: 230px;
+}
+.card-produkt h4{
+    font-size: 16px;
+    font-weight: 700;
+    margin-bottom: 3%;
+    color: rgba(34, 78, 96, 0.81);
+}
+.card-produkt p{
+    margin: 0 7px 10px 7px;
+    font-size: 14px;
+    color:rgba(35, 82, 211, 0.93);
+}
+.product-img{
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    width: 50%;
+    margin:5px;
+}
+.big-img img{
+    margin: 4% 0 4% 8%;    
+}
+.desc{
+    margin: 0 4% 4% 8%;
+}
+.desc h3{
+    text-transform: uppercase;
+    text-align: center;
+    margin-bottom: 20px;
+    color: rgba(35, 82, 211, 0.93);
+}
+.desc p{
+    margin-top: 2%;
+    margin-bottom: 2%;
+}
+.desc span{
+    border-radius: 4px;
+    padding: 4px;
+    font-weight: 600;
+    background: #e6ef79;
+    margin-right: 9%;
+}
+.desc button{
+    background: #e3e3e3;
+    border: 1px solid #ccc;
+    color: #333;
+    font-size: 13px;
+    font-weight: bold;
+    padding: 5px 7px;
+    text-align: center;
+    width: 25%;
+    cursor:pointer;
+    float:right;
+    margin:0 20px 10px 10px;
+    text-shadow: 0 1px 0px #fff;
+    border-radius: 3px;
+    -webkit-box-shadow: 0px 0px 2px #fff inset;
+    box-shadow: 0px 0px 2px #fff inset;
+}
+
+.desc button:hover {
+    background: #d9d9d9;
+    -webkit-box-shadow: 0px 0px 2px #eaeaea inset;
+    box-shadow: 0px 0px 2px #eaeaea inset;
+    color: #222;
+}
+/*-----------form--------*/
+.form_wrapper{
+    background:#fff;
+    border:1px solid #ddd;
+    width: 100%;
+    font-size:16px;
+}
+.form-comment h3,
+.form_wrapper h3{
+    padding:10px 30px 10px 30px;
+    background-color:#aca3a3;
+    color:#fff;
+    font-size:20px;
+    border-bottom:1px solid #ddd;
+}
+.form_wrapper form{
+    display:none;
+    background:#fff;
+}
+form.active{
+    display:block;
+}
+form.login{
+    width:100%;
+}
+form.register{
+    width:100%;
+}
+form.forgot_password{
+    width:300px;
+}
+.form_wrapper a{
+    text-decoration:none;
+    color:#777;
+    font-size:12px;
+}
+.form_wrapper a:hover{
+    color:#000;
+}
+.form_wrapper label{
+    display:block;
+    padding:10px 30px 0px 30px;
+    margin:10px 0px 0px 0px;
+}
+.form_wrapper input[type="text"],
+.form_wrapper input[type="password"]{
+    border: solid 1px #E5E5E5;
+    margin: 5px 30px 0px 30px;
+    padding: 7px;
+    margin-top: 15px;
+    display:block;
+    font-size:13px;
+    width:100%;
+    background: #FFFFFF;
+    background: 
+        -moz-linear-gradient(
+            top, 
+            #FFFFFF,
+            #EEEEEE 1px, 
+            #FFFFFF 25px
+            );
+    -webkit-box-shadow: 0px 0px 8px #f0f0f0;
+    box-shadow: 0px 0px 8px #f0f0f0;
+}
+.form_wrapper input[type="text"]:focus,
+.form_wrapper input[type="password"]:focus{
+    background:#feffef;
+    font-size: 15px;
+}
+.form-comment .bottom,
+.form_wrapper .bottom{
+    width: 100%;
+    background-color:#aca3a3;
+    border-top:1px solid #ddd;
+    padding-top: 15px;
+    margin-top:20px;
+    clear:both;
+    color:#fff;
+    text-shadow:1px 1px 1px #000;
+}
+#btn{
+    text-decoration: underline;
+    margin-left: 15px;
+    color:#ffa800;
+    padding: 5px 8px;
+    font-style: italic;
+    font-size: 12px;
+    cursor: pointer;
+}
+.form_wrapper a.forgot{
+    float:right;
+    font-style:italic;
+    line-height:24px;
+    color:#ffa800;
+    text-shadow:1px 1px 1px #fff;
+}
+.form_wrapper a.forgot:hover{
+    color:#000;
+}
+
+.form_wrapper div.remember input{
+    float:left;
+    margin:2px 5px 0px 0px;
+}
+.form-comment button[type="submit"],
+.form_wrapper input[type="submit"] {
+    background: #e3e3e3;
+    border: 1px solid #ccc;
+    color: #333;
+    font-size: 13px;
+    font-weight: bold;
+    padding: 5px 7px;
+    text-align: center;
+    width: 40%;
+    cursor:pointer;
+    float:right;
+    margin:0 20px 10px 10px;
+    text-shadow: 0 1px 0px #fff;
+    border-radius: 3px;
+    -webkit-box-shadow: 0px 0px 2px #fff inset;
+    box-shadow: 0px 0px 2px #fff inset;
+}
+.form-comment{
+    width: 100%;
+    margin-top: 25px;
+    border:1px solid #E5E5E5;
+}
+.form-comment input[type="text"],
+.form-comment textarea{
+    border: solid 1px #E5E5E5;
+    margin: 5px 30px 0px 30px;
+    padding: 7px;
+    margin-top: 15px;
+    display:block;
+    font-size:13px;
+    width:75%;
+    background: #FFFFFF;
+    background: 
+        -moz-linear-gradient(
+            top, 
+            #FFFFFF,
+            #EEEEEE 1px, 
+            #FFFFFF 25px
+            );
+    -webkit-box-shadow: 0px 0px 8px #f0f0f0;
+    box-shadow: 0px 0px 8px #f0f0f0; 
+}
+.form-comment input[type="reset"] {
+    background: #e3e3e3;
+    border: 1px solid #ccc;
+    color: #333;
+    font-size: 13px;
+    font-weight: bold;
+    padding: 5px 7px;
+    text-align: center;
+    width: 40%;
+    cursor:pointer;
+    float:left;
+    margin:0 0 10px 20px;
+    text-shadow: 0 1px 0px #fff;
+    border-radius: 3px;
+    -webkit-box-shadow: 0px 0px 2px #fff inset;
+    box-shadow: 0px 0px 2px #fff inset;
+}
+ 
+.form-comment input[type="reset"]:hover {
+    background: #d9d9d9;
+    -webkit-box-shadow: 0px 0px 2px #eaeaea inset;
+    box-shadow: 0px 0px 2px #eaeaea inset;
+    color: #222;
+}
+/*----------comment--------*/
+#comment{
+    display: block;
+    border: 1px solid #E5E5E5;
+    width: 89%;
+    margin-left: 8%;
+}
+#comment h4{
+    padding:10px 30px 10px 30px;
+    background-color:#aca3a3;
+    color:#fff;
+    font-size:20px;
+    border-bottom:1px solid #ddd;   
+}
+.text-com span{
+    margin-top: 20px;
+    display: inline-block;
+}
+.text-com strong{
+    display: block;
+    font-size: 18px;
+    margin-top:20px;
+    margin-bottom: 3px;
+    margin-left: 15px;
+    color: #314a53;
+}
+.text-com hr{
+    margin-bottom: 15px;
+    width: 550px;
+    height: 1px; 
+    margin-left: 15px;
+    background:#ddd; 
+}
+.text-com p{
+    display: block;
+    font-size: 15px;
+    line-height: 18px;
+    margin-bottom: 5px;
+    margin-left: 15px;
+    color: #59737c;
+    font-weight: 600;
+}
+#star{
+    margin-left: 31px;
+    margin-bottom: 10px;
+    float: left;
+}
+#rep2{
+    float:right;
+    display: block;
+    margin-top: 14px;
+    margin-left: 10px;
+}
+#mes{
+    display: none;
+    margin-left: 30px;
+    margin-top: 10px;
+    font-size: 14px;
+    color: red;
+}
+
+
+
